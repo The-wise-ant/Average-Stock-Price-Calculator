@@ -16,7 +16,24 @@ public class Rectangle extends Shape {
 		this.diagonal = Math.sqrt((Math.pow(length, 2) + Math.pow(width, 2)));
 
 	}
+	
+	
+	//////GETTERS///////////
 
+	
+
+	public double getWidth() {
+		return this.width;
+	}
+
+
+	public double getLength() {
+		return this.length;
+	}
+
+	
+	
+	
 	@Override
 	public double getArea() {
 		return this.area;
