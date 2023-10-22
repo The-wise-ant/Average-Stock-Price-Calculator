@@ -1,19 +1,25 @@
 import java.util.Scanner;
+import shapes.*;
+import triangles.*;
+
+
 
 public class Main {
 
 	public static void main(String[] args) {
+		
+		
 
 		Scanner scan = new Scanner(System.in);
 
 		while (true) {
-			System.out.println("Pick a 2D geometric shape among square, rectangle and circle ");
+			System.out.println("Pick a 2D geometric shape among square, rectangle, circle, or triangle ");
 			String inputShape = scan.nextLine();
 
 			while (!(inputShape.equalsIgnoreCase("square") || inputShape.equalsIgnoreCase("circle")
-					|| inputShape.equalsIgnoreCase("rectangle"))) {
+					|| inputShape.equalsIgnoreCase("rectangle")  || inputShape.equalsIgnoreCase("triangle") )) {
 
-				System.out.println("please enter a shape among circle, square and rectangle.");
+				System.out.println("please enter a shape among circle, square, rectangle and triangle.");
 				inputShape = scan.nextLine();
 			}
 
@@ -57,6 +63,29 @@ public class Main {
 						+ rectangle.getArea() + " and finally, a diagonal of " + rectangle.getDiagonal() + "\n");
 
 			}
+			
+			
+			if (inputShape.equalsIgnoreCase("triangle")) {
+
+				System.out.println("Enter the first side of the triangle:");
+				double a = Double.valueOf(scan.nextLine());
+				
+					System.out.println("Enter the second side:");
+				double b = Double.valueOf(scan.nextLine());
+				
+					System.out.println("Enter the third side:");
+				double c = Double.valueOf(scan.nextLine());
+
+
+
+				Triangle triangle =  TriangleFactory.createTriangle(a,b,c);
+
+				System.out.println("your triangle has sides of: " + triangle.getSides() + ", a perimeter of "
+						+ triangle.getPerimeter() + ", an area of " + triangle.getArea() + " and a diagonal of "
+						+ triangle.getDiagonal() + "\n");
+}
+
+
 
 			System.out.println(
 					"would you add another geometrical shape? Press \" yes \" to continue, anything other to exit");
@@ -71,7 +100,10 @@ public class Main {
 
 		}
 		
-		System.out.println("You exited the cycle, program finished.");
+		System.out.println("You exited the cycle, program finished."); 
+		
+		
 
+		
 	}
 }

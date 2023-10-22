@@ -1,3 +1,4 @@
+import shapes.Shape;
 
 public class Rectangle extends Shape {
 
@@ -19,6 +20,12 @@ public class Rectangle extends Shape {
 	
 	
 	//////GETTERS///////////
+	@Override
+	public String getSides() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
 
 	
 
@@ -87,6 +94,9 @@ public class Rectangle extends Shape {
 	        this.area = newArea;
 	    }
 	}
+
+
+
 
 
 }

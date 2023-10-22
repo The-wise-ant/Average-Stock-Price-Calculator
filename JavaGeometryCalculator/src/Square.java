@@ -1,3 +1,4 @@
+import shapes.Shape;
 
 public class Square extends Shape {
 	private double side;
@@ -20,6 +21,13 @@ public class Square extends Shape {
 	}
 
 	//// GETTERS///////
+	
+	@Override
+	public String getSides() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
 
 	public double getSide() {
 		return this.side;
@@ -55,5 +63,7 @@ public class Square extends Shape {
 		this.side = Math.sqrt(newArea);
 		this.perimeter = Math.sqrt(newArea) * 4;
 	}
+
+
 
 }

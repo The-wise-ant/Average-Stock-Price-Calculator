@@ -1,8 +1,11 @@
+package shapes;
 
 public abstract class Shape {
 
 	protected double area;
 	 protected double perimeter;
+	 
+		public abstract String getSides();
 
 	public abstract double getPerimeter();
 

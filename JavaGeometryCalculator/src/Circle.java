@@ -1,3 +1,4 @@
+import shapes.Shape;
 
 public class Circle extends Shape {
 
@@ -14,6 +15,13 @@ public class Circle extends Shape {
 	}
 
 	//////// GETTERS//////
+	@Override
+	public String getSides() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
 	public double getArea() {
 		return this.area;
 	}
@@ -58,6 +66,8 @@ public class Circle extends Shape {
 	  
 	    this.perimeter = 2 * (piValue * newRadius);
 	}
+
+
 
 
 }
