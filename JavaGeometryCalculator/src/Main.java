@@ -65,7 +65,7 @@ public class Main {
 			}
 			
 			
-			if (inputShape.equalsIgnoreCase("triangle")) {
+			else if (inputShape.equalsIgnoreCase("triangle")) {
 
 				System.out.println("Enter the first side of the triangle:");
 				double a = Double.valueOf(scan.nextLine());
@@ -80,9 +80,8 @@ public class Main {
 
 				Triangle triangle =  TriangleFactory.createTriangle(a,b,c);
 
-				System.out.println("your triangle has sides of: " + triangle.getSides() + ", a perimeter of "
-						+ triangle.getPerimeter() + ", an area of " + triangle.getArea() + " and a diagonal of "
-						+ triangle.getDiagonal() + "\n");
+				System.out.println("your triangle has sides of: " + triangle.getSide() + ", a perimeter of "
+						+ triangle.getPerimeter() + " and an area of " + triangle.getArea() + "\n");
 }
 
 

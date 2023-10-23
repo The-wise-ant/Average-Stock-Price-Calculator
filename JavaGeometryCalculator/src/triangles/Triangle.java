@@ -3,8 +3,8 @@ import shapes.*;
 
 import shapes.Shape;
 
-public abstract class Triangle extends Shape {
+public abstract class Triangle extends Polygon {
 	
-	public abstract double getDiagonal();
+
 
 }

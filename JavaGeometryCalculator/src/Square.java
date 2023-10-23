@@ -22,11 +22,7 @@ public class Square extends Shape {
 
 	//// GETTERS///////
 	
-	@Override
-	public String getSides() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	
 	
 
 	public double getSide() {

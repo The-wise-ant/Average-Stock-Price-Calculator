@@ -1,6 +1,7 @@
+import shapes.Curve;
 import shapes.Shape;
 
-public class Circle extends Shape {
+public class Circle extends Curve {
 
 	double piValue = GeometryConstants.PI.getValue();
 	private double radius;
@@ -15,11 +16,6 @@ public class Circle extends Shape {
 	}
 
 	//////// GETTERS//////
-	@Override
-	public String getSides() {
-		// TODO Auto-generated method stub
-		return null;
-	}
 	
 	
 	public double getArea() {
@@ -65,6 +61,18 @@ public class Circle extends Shape {
 	    this.area = newArea;
 	  
 	    this.perimeter = 2 * (piValue * newRadius);
+	}
+
+	@Override
+	public double setRadius() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double setDiameter() {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 
 
