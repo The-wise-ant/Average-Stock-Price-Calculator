@@ -74,7 +74,15 @@ public class Circle extends Curve {
 		// TODO Auto-generated method stub
 		return 0;
 	}
-
+	
+	
+	@Override
+	public String toString() {
+		return ("your circle has a radius of " + this.getRadius() + ", a circumference of "
+				+ this.getCircumference() + ", an area of " + this.getArea() + " and a diameter of "
+				+ this.getDiameter() + "\n");
+}
+	
 
 
 

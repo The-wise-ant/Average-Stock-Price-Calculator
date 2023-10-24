@@ -29,10 +29,7 @@ public class Main {
 				double radiusLength = Double.valueOf(scan.nextLine());
 
 				Circle circle = new Circle(radiusLength);
-
-				System.out.println("your circle has a radius of " + circle.getRadius() + ", a circumference of "
-						+ circle.getCircumference() + ", an area of " + circle.getArea() + " and a diameter of "
-						+ circle.getDiameter() + "\n");
+                System.out.println(circle);
 
 			}
 
@@ -43,8 +40,7 @@ public class Main {
 
 				Square square = new Square(squareLength);
 
-				System.out.println("your square has a side of " + square.getSide() + ", a perimeter of "
-						+ square.getPerimeter() + " and an area of " + square.getArea() + "\n");
+				System.out.println(square);
 
 			}
 
@@ -58,9 +54,7 @@ public class Main {
 
 				Rectangle rectangle = new Rectangle(widthLength, lengthLength);
 
-				System.out.println("your rectangle has a width of " + rectangle.getWidth() + ", a length of "
-						+ rectangle.getLength() + ", a perimeter of " + rectangle.getPerimeter() + ", an area of "
-						+ rectangle.getArea() + " and finally, a diagonal of " + rectangle.getDiagonal() + "\n");
+				System.out.println(rectangle);
 
 			}
 			
@@ -76,12 +70,16 @@ public class Main {
 					System.out.println("Enter the third side:");
 				double c = Double.valueOf(scan.nextLine());
 
+				if(a >= (b + c) || b >= (a + c) || c >= ( a + b)) {
+					
+					System.out.println("triangle not possible. The longer side must be less than the sum of the other two. \n");
+					continue;
+				}
 
 
 				Triangle triangle =  TriangleFactory.createTriangle(a,b,c);
 
-				System.out.println("your triangle has sides of: " + triangle.getSide() + ", a perimeter of "
-						+ triangle.getPerimeter() + " and an area of " + triangle.getArea() + "\n");
+				System.out.println(triangle);
 }
 
 

@@ -83,6 +83,24 @@ public class Rectangle extends Shape {
 	        this.area = newArea;
 	    }
 	}
+	
+	
+
+	@Override
+	public String toString() {
+		return  "your rectangle has a width of " + this.getWidth() + ", a length of "
+				+ this.getLength() + ", a perimeter of " + this.getPerimeter() + ", an area of "
+				+ this.getArea() + " and finally, a diagonal of " + this.getDiagonal() + "\n";
+				
+	}
+	
+	
+	
+	/*    
+	 * 
+	 *  
+	 *   
+	 *   */
 
 
 

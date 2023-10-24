@@ -65,8 +65,9 @@ public class IsoscelesTriangle extends Triangle {
 	@Override
 	public String toString() {
 		
-		return "Your triangle has a base of " + this.getBase() + ", side of " + this.getSide()+ 
-				", a perimeter of " + this.getPerimeter() + " and an area of " + this.getArea();
+		return "Your triangle is an isosceles triangle. " + 
+		        "It has a base of " + this.getBase() + ", sides of " + this.getSide()+ 
+				", a perimeter of " + this.getPerimeter() + " and an area of " + this.getArea() + "\n";
 				}
 	
 	

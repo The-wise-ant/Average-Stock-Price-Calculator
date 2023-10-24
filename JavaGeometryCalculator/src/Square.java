@@ -59,6 +59,20 @@ public class Square extends Shape {
 		this.side = Math.sqrt(newArea);
 		this.perimeter = Math.sqrt(newArea) * 4;
 	}
+	
+	
+	
+
+	@Override
+	public String toString() {
+		return   "your square has a side of " + this.getSide() + ", a perimeter of "
+				+ this.getPerimeter() + " and an area of " + this.getArea() + "\n";
+}
+	
+	
+	/* 
+	 *           
+	 * */
 
 
 

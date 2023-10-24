@@ -4,11 +4,13 @@ import shapes.*;
 
 public class TriangleFactory {
 	public static Triangle createTriangle(double a, double b, double c) {
-		if (a == b && a == c) {
+		if (a == b && a == c && b==c) {
 			return new EquilateralTriangle(a);
 		}
 
-		else if (a != b && b != c) {
+		
+		
+		else if (a != b && b != c && a != c) {
 
 			return new ScaleneTriangle(a, b, c);
 		}

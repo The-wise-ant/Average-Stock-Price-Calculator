@@ -56,8 +56,9 @@ public class EquilateralTriangle extends Triangle {
 
 	@Override
 	public String toString() {
-         return "Your triangle has three sides of " + this.getSide() + ", a perimeter of " 
-		+ this.getPerimeter() + " and an area of " + this.getArea();
+         return "Your triangle is an equilateral triangle. " + 
+	             "It has three sides of " + this.getSide() + ", a perimeter of " 
+		          + this.getPerimeter() + " and an area of " + this.getArea() + "\n";
 	}
 
 }
